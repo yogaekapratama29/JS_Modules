@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module Object</title>
+</head>
+<body>
+    <script type="module">
+
+        // import banyak module
+        import * as Yoga from "./scripts/module-object.js";
+
+        console.info(Yoga.firstName);
+        console.info(Yoga.middleName);
+        console.info(Yoga.lastName);
+
+        Yoga.hello();
+
+        const person = new Yoga.Person();
+    </script>
+</body>
+</html>
